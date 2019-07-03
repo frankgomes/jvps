@@ -1,12 +1,14 @@
 package org.hackSugar.jvps;
 
 import java.io.File;
+import java.nio.file.Path;
 import java.util.Scanner;
 
 public class Shell {
     // Environment variables
     public final static String version = "0.01a";
-    public final static String pwd = String.format("%s\b", new File(".").getPath());
+    public static String pwd = String.format("%s\b", new File(".").getPath());
+    public static File pathmarker = new File(".");
 
     public static void main(String[] args) {
         // Prints start text
