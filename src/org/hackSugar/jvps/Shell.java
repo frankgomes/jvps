@@ -34,7 +34,7 @@ public class Shell {
             // If not in the current directory, checks if executable exists in /src/bin/
             execBuffer = new File(String.format("src/bin/%s.java", input));
             if (execBuffer.exists()) {
-                // TODO run process
+                
                 continue;
             }
             // If command doesn't exist, returns output
