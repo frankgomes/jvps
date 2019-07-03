@@ -1,7 +1,6 @@
 package org.hackSugar.jvps;
 
 import java.io.File;
-import java.nio.file.Path;
 import java.util.Scanner;
 
 public class Shell {
