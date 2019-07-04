@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class ls {
     public static void main(String[] args) {
-        File pathmarker = Shell.pathmarker;
+        File pathmarker = Shell.pathMarker;
         File cwd = pathmarker.getParentFile();
         File[] list = cwd.listFiles();
 

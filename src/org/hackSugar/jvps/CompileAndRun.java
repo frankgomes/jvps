@@ -7,14 +7,14 @@ import java.io.InputStream;
 public class CompileAndRun {
 
     public static void main(String[] args) {
-        new CompileAndRun();
+        new CompileAndRun(args[0]);
     }
 
-    private CompileAndRun() {
+    private CompileAndRun(String command) {
         try {
-            int result = compile("compileandrun/HelloWorld.java");
-            System.out.println("javac returned " + result);
-            result = run("compileandrun.HelloWorld");
+            int result = compile("src/bin/" + command + ".java");
+            System.out.print("\n" + result);
+            result = run(command + "." + command);
         } catch (IOException | InterruptedException ex) {
             ex.printStackTrace();
         }
